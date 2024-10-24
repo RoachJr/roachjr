@@ -17,6 +17,7 @@
             
                 <a href="/roachjr/docs/roblox"><strong>Roblox Game Developing Vulnerabilities</strong></a>
                 <a href="/roachjr/docs/roblox#third_party_attacks">Third Party Attacks (DDOS)</a>
+                <a href="/roachjr/docs/roblox#remote_events">Remote Events</a>
 
             </div>
 
@@ -25,33 +26,61 @@
                 <br>
                 <p>There are hundreds of ways that your Roblox game can become vulnerable to an attack. This can come from a variety of different ways.</p>
                 <br>
-                <a name="third_party_attacks"> </a>
-                <h2>Third Party Attacks (DDOS)</h2>
-                <p>When a Third Party Attack begins on your game, this can range from anything to a DDOS, it can mess up your game to the point where nobody can play it. You can open yourself up to these attacks by enabling HTTP requests from and to your game. This is done by accessing the game settings as a developer.</p>
-                <img src="/roachjr/content/imgs/4.png">
-                <p>
-                    These Third Party Attacks are usually a DDOS. To understand what DDOS is, we have to break it down. DOS in DDOS stands for Denial of Service. <br>
-                    This is an attack done by one person to bring a specific server down, and because Roblox uses servers for players, it can be vulnerable to these attacks. <br>
-                    To understand how this attack even works, we need to know how a server works. <br>
-                    A server, in simple terms, is a big digital storage that programs can use for a purpose, but this storage is not infinte. <br>
-                    There is a maxium of what these servers can handle, and a DOS attack takes advantage of this. A DOS attack sends as much storage to the server as possible to fill it up, which causes the server to have no more room for anything, and if you continue to fill up the server while it already is full, the server will shut down. <br>
-                    A DDOS stands for Distrubted Denial of Service, this attack means it does done by mutliple people or one person with multiple devices. <br>
-                    This is basically a DOS attack but a LOT more powerful. Which means it is easier to make servers shut down. <br>
+
+                <div class="third_party_attacks">
+                    <a name="third_party_attacks"> </a>
+                    <h2>Third Party Attacks (DDOS)</h2>
+                    <p>When a Third Party Attack begins on your game, this can range from anything to a DDOS, it can mess up your game to the point where nobody can play it. You can open yourself up to these attacks by enabling HTTP requests from and to your game. This is done by accessing the game settings as a developer.</p>
+                    <img src="/roachjr/content/imgs/4.png">
+                    <p>
+                        These Third Party Attacks are usually a DDOS. To understand what DDOS is, we have to break it down. DOS in DDOS stands for Denial of Service. <br>
+                        This is an attack done by one person to bring a specific server down, and because Roblox uses servers for players, it can be vulnerable to these attacks. <br>
+                        To understand how this attack even works, we need to know how a server works. <br>
+                        A server, in simple terms, is a big digital storage that programs can use for a purpose, but this storage is not infinte. <br>
+                        There is a maxium of what these servers can handle, and a DOS attack takes advantage of this. A DOS attack sends as much storage to the server as possible to fill it up, which causes the server to have no more room for anything, and if you continue to fill up the server while it already is full, the server will shut down. <br>
+                        A DDOS stands for Distrubted Denial of Service, this attack means it does done by mutliple people or one person with multiple devices. <br>
+                        This is basically a DOS attack but a LOT more powerful. Which means it is easier to make servers shut down. <br>
+                        <br>
+                        Again, the only way to make your game vulnerable to this attack is by enabling HTTP requests for your game. <br>
+                        Though sometimes, your game needs these HTTP requests, so here are some ways to defend against these attacks. <br>
+                        <br>
+                        The only way a DDOS or DOS attack can even happen, is if they have the server IP, which is the location of the server. <br> 
+                        Think of it this way, I want to send a bunch of trash to my enemy's house, but I don't know where his location is, so there is no way I can send my trash to my enemy. <br> 
+                        But if I did infact have my enemy's location, I can easily send that trash to him. In this case, the IP of the server is the location of my enemy's house, and the trash is the DOS or DDOS attacks. <br>
+                        And the only way people can get this IP, is by going into the server. Which means if you can ban the player or players that are doing this attack from your game, you can essentially stop the attack. <br>
+                        Though there is a flaw to this as you need to ban them before they ever join the game. <br>
+                        A better solution to this problem would be to use this <a href="https://devforum.roblox.com/t/your-roblox-game-servers-are-being-ddosed-i-made-a-solution/2331576" style="color:darkblue;" target="_blank">tool</a>, made by <a href="https://devforum.roblox.com/u/forbrad" style="color:darkblue;" target="_blank">forbrad</a> on Roblox.
+                    </p>
+                    <img width="500" src="/roachjr/content/imgs/5.png">
                     <br>
-                    Again, the only way to make your game vulnerable to this attack is by enabling HTTP requests for your game. <br>
-                    Though sometimes, your game needs these HTTP requests, so here are some ways to defend against these attacks. <br>
-                    <br>
-                    The only way a DDOS or DOS attack can even happen, is if they have the server IP, which is the location of the server. <br> 
-                    Think of it this way, I want to send a bunch of trash to my enemy's house, but I don't know where his location is, so there is no way I can send my trash to my enemy. <br> 
-                    But if I did infact have my enemy's location, I can easily send that trash to him. In this case, the IP of the server is the location of my enemy's house, and the trash is the DOS or DDOS attacks. <br>
-                    And the only way people can get this IP, is by going into the server. Which means if you can ban the player or players that are doing this attack from your game, you can essentially stop the attack. <br>
-                    Though there is a flaw to this as you need to ban them before they ever join the game. <br>
-                    A better solution to this problem would be to use this <a href="https://devforum.roblox.com/t/your-roblox-game-servers-are-being-ddosed-i-made-a-solution/2331576" style="color:darkblue;" target="_blank">tool</a>, made by <a href="https://devforum.roblox.com/u/forbrad" style="color:darkblue;" target="_blank">forbrad</a> on Roblox.
-                </p>
-                <img width="500" src="/roachjr/content/imgs/5.png">
+                    <img width="500" src="/roachjr/content/imgs/6.png">
+                </div>
                 <br>
-                <img width="500" src="/roachjr/content/imgs/6.png">
+                <br>
+                <div class="remote_events">
+                    <a name="remote_events"> </a>
+                    <h2>Remote Events</h2>
+                    <p>Remote Events are mainly used throughout Roblox development, Roblox has a system where the client (player), cannot affect the server throughout regular means. If this was possible, no games on Roblox would be safe of the threat from hackers. The only way the client can "affect" the server is by Remote Events, which allow the client and server to communicate.</p>
+                    <img src="/roachjr/content/imgs/7.png">
+                    <p>
+                        A Remote Event can actually help developers in order to stop hackers, only if these Remote Events are used wisely. <br>
+                        Hackers can use these Remote Events to allow them to gain unfair advantages ingame. <br>
+                        To understand how this attack even works, we need to know how a server works. <br>
+                        An example of this is a hacker using these Remote Events to kill anybody in the game from anywhere. <br>
+                        In short terms, a Remote Event is a gateway between the servera and the client. Due to clients not being allowed to communicate with the server if they aren't using a Remote Event, hackers will try to find a way to use these Remote Events to mess up the server. <br>
+                        <br>
+                        A good way to prevent these is by doing Remote Event checks. This is just having code in the server that recieves these Remote Event requests, this would check the info of the request, if the info isn't correct, it will reject the request. <br>
+                        These checks are known as "Sanity Checks," and just make sure that a Remote Event isn't being used for bad intent.
+                        <br>
+                        Learn more about <a href="https://devforum.roblox.com/u/forbrad" style="color:darkblue;" target="_blank">Sanity Checks</a>.
+                    </p>
+                    <img width="500" src="/roachjr/content/imgs/8.png">
+                </div>
+
             </div>
+            <br>
+            <br>
+
         </div>
 
         </body>
