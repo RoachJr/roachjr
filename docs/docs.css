@@ -21,7 +21,6 @@ body {
 .sidebar {
     width: 200px;
     height: 100vh;
-    bottom: 0%;
     background-color: #00310065;
     color: #fff;
     box-sizing: border-box;
@@ -43,6 +42,14 @@ body {
     padding: 10px;
     margin: 0%;
     transition: background-color 0.3s;
+}
+
+.sidebar h1 {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0%;
 }
 
 /* Change background color on hover */
