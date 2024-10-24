@@ -11,7 +11,7 @@ body {
 }
 
 .border {
-    border: 6x solid green;
+    border: 6px solid green;
 }
 
 .container {
@@ -49,7 +49,7 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 10px;
-    margin: 20px;
+    margin: 1vh;
     margin-bottom: 0%;
 }
 
