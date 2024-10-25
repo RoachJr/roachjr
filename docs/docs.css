@@ -44,13 +44,12 @@ body {
     transition: background-color 0.3s;
 }
 
-.sidebar h2 {
+.sidebar h4 {
     display: block;
     color: #fff;
     text-decoration: none;
     padding: 10px;
     margin-top: 5%;
-    transition: background-color 0.3s;
 }
 
 /* Change background color on hover */
