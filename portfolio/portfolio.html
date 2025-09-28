@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" type="text/css" href="portfolio.css">
+        </head>
+        <div id ="sideBar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="/roachjr"><strong>Home Page</strong></a>
+                <a href="/roachjr/projects/projects"><strong>Projects</strong></a>
+                <a href="/roachjr/portfolio/portfolio"><strong>Portfolio</strong></a>
+        </div>
+        
+        <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
 
+                <div class="center">
+                        <div class="border">
+                                <body>
+                                        <h1>Programming</h1>
+                                        <video width="1000" controls>
+                                                <source src="/roachjr/content/vids/1.mp4" type="video/mp4">
+                                                Your browser does not support HTML video.
+                                        </video>
+                                        <p>Combat System</p>
+                                        <br>
+                                        <br>
+                                        
+                                </body>
+                        </div>
+                </div>
+
+                <script>
+                        function openNav() {
+                                document.getElementById("sideBar").style.width = "250px";
+                                document.getElementById("main").style.marginLeft = "250px";
+                        }
+
+                        function closeNav() {
+                                document.getElementById("sideBar").style.width = "0";
+                                document.getElementById("main").style.marginLeft= "0";
+                        }
+                </script>
+        </div>
+        
+</html>
