@@ -17,9 +17,7 @@ body {
 .image-container {
     	max-width: 100%; /* Set a pixel value instead if no parent container*/
     	margin: 0 auto; /* Center the container */
-	}
-.image-container image {
-    	width: 50%; /* Fill the available width */
+      width: 50%; /* Fill the available width */
     	height: auto; /* Adjust height automatically */
 }
 
@@ -79,5 +77,3 @@ body {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-
-
