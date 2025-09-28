@@ -5,39 +5,39 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link rel="stylesheet" type="text/css" href="projects.css">
         </head>
-        <div class="container">
-                <div class="sidebar">
+        <div id ="sideBar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="/roachjr"><strong>Home Page</strong></a>
+                <a href="/roachjr/projects/projects"><strong>Projects</strong></a>
+                <a href="/roachjr/portfolio/portfolio"><strong>Projects</strong></a>
+        </div>
         
-                        <a href="/roachjr"><strong>Home Page</strong></a>
-                        <a href="/roachjr/projects/projects"><strong>Projects</strong></a>
-        
-                </div>
-        
-                <div class="content">
-                    <div class="center">
+        <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
+
+                <div class="center">
                         <div class="border">
                                 <body>
-                                        <h1>This specific Roblox game is a combat game that is being planned on having a setting that is set in an apocalyptic environment</h1>
-                                        <img src="/roachjr/content/imgs/1.png">
-                                        <p>Character holding a long sword</p>
+                                        <h1><a href="https://www.roblox.com/games/89453668852316/-" style="color:darkblue;" target="_blank">Don't Blow It!</a></h1>
+                                        <img src="/roachjr/content/imgs/placeholderImage.png">
+                                        <p>A hot potato themed game where you pass on a ticking bomb, but be careful, if you have the bomb whenever the time's up, you lose!</p>
                                         <br>
                                         <br>
-                                        <img src="/roachjr/content/imgs/2.png">
-                                        <p>Character holding a firearm</p>
-                                        <br>
-                                        <br>
-                                        <img src="/roachjr/content/imgs/3.png">
-                                        <p>Character holding a short axe in a specific area</p>
-                                        <br>
-                                        <br>
-                                        <video width="1000" controls>
-                                                <source src="/roachjr/content/vids/1.mp4" type="video/mp4">
-                                                Your browser does not support HTML video.
-                                        </video>
-                                        <p>Character using weapons against an NPC</p>
+                                        
                                 </body>
                         </div>
-                    </div>
                 </div>
-            </div>
+
+                <script>
+                        function openNav() {
+                                document.getElementById("sideBar").style.width = "250px";
+                                document.getElementById("main").style.marginLeft = "250px";
+                        }
+
+                        function closeNav() {
+                                document.getElementById("sideBar").style.width = "0";
+                                document.getElementById("main").style.marginLeft= "0";
+                        }
+                </script>
+        </div>
 </html>
