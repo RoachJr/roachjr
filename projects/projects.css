@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color:darkgreen;
-    color: white;
+    background-color:rgb(176, 176, 176);
+    color: rgb(0, 0, 0);
     font-family: "Lato", sans-serif;
 }
 
@@ -11,49 +11,62 @@ body {
 }
 
 .border {
-    border: 6px solid green;
-}
-
-.container {
-    display: flex;
+    border: 3px solid rgb(17, 17, 17);
 }
 
 .sidebar {
-    width: 20vh;
-    height: 100vh;
-    background-color: #00310065;
-    color: #fff;
-    box-sizing: border-box;
-    position: fixed;
-}
-
-.content {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-left: 20vh;
-    text-align: justify;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(17, 17, 17);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
 .sidebar a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    margin: 0%;
-    transition: background-color 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(129, 129, 129);
+  display: block;
+  transition: 0.3s;
 }
 
-.sidebar h2 {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    margin: 1vh;
-    margin-bottom: 0%;
-}
-
-/* Change background color on hover */
 .sidebar a:hover {
-    background-color: #2980b9;
+  color: rgb(241, 241, 241);
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgb(68, 68, 68);
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }
