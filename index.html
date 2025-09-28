@@ -5,19 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <div class="container">
-
-        <div class="sidebar">
+        <div id ="sideBar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="/roachjr"><strong>Home Page</strong></a>
             <a href="/roachjr/projects/projects"><strong>Projects</strong></a>
         </div>
         
-        <div class="content">
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button> 
+
             <div class="center">
                 <div class="border">
                     <div class="border">
                         <h1>
-                            My name is Muhammad, it's nice to meet you.
+                            I go by RoachJr, it's nice to meet you.
                         </h1>
                     </div>
                     <body>
@@ -28,7 +29,7 @@
                                 Welcome to my page, entirely programmed and written by me. Pretty cool huh?
                             </p>
                             <p>
-                                I'm a young programmer within the state of Kentucky.
+                                I'm a young programmer within the United States.
                             </p>
                         </div>
             
@@ -56,9 +57,9 @@
                             <p>
                                 I mainly work on Python-based projects, but sometimes I like to mess around with other programming languages.
                                 <br>
-                                I'm currently working creating games using the Lua based engine <a href="https://www.roblox.com/" style="color:darkblue;">Roblox</a>. (Most of these games are still WIP, if you would like to see images of some of these games, press the link <a href="projects/roblox" style="color:darkblue;">here</a>!)
+                                I'm currently creating games using the Lua based engine <a href="https://www.roblox.com/" style="color:darkblue;">Roblox</a>. (Most of these games are still WIP, if you would like to see some of these games, press the link <a href="projects" style="color:darkblue;">here</a>!)
                                 <br>
-                                I also just mess around with different things like animation, 3D design (not very good at that one 😅), but I am mainly learning how to animate.
+                                I also just mess around with different things like animation, 3D design (not very good at that one), but I am mainly learning how to animate.
                                 <br>
                                 This website! I honestly have no idea how HTML, CSS, or JS or Java even works! So this is all completely new to me.
                             </p>
@@ -88,7 +89,19 @@
                 </body>
             </div>
         </div>
-    </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("sideBar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("sideBar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
 </html>
+
 
 
