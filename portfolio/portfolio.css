@@ -1,1 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(176, 176, 176);
+    color: rgb(0, 0, 0);
+    font-family: "Lato", sans-serif;
+}
 
+.center {
+    text-align: center;
+}
+
+.border {
+    border: 3px solid rgb(17, 17, 17);
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(17, 17, 17);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(129, 129, 129);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: rgb(241, 241, 241);
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgb(68, 68, 68);
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
