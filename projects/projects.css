@@ -14,15 +14,6 @@ body {
     border: 3px solid rgb(17, 17, 17);
 }
 
-.video-container {
-    	max-width: 100%; /* Set a pixel value instead if no parent container*/
-    	margin: 0 auto; /* Center the container */
-	}
-.video-container video {
-    	width: 50%; /* Fill the available width */
-    	height: auto; /* Adjust height automatically */
-}
-
 .image-container {
     	max-width: 100%; /* Set a pixel value instead if no parent container*/
     	margin: 0 auto; /* Center the container */
@@ -88,4 +79,5 @@ body {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
+
 
