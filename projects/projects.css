@@ -23,6 +23,15 @@ body {
     	height: auto; /* Adjust height automatically */
 }
 
+.image-container {
+    	max-width: 100%; /* Set a pixel value instead if no parent container*/
+    	margin: 0 auto; /* Center the container */
+	}
+.image-container image {
+    	width: 50%; /* Fill the available width */
+    	height: auto; /* Adjust height automatically */
+}
+
 .sidebar {
   height: 100%;
   width: 0;
@@ -79,3 +88,4 @@ body {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
+
