@@ -14,7 +14,7 @@ body {
     border: 3px solid rgb(17, 17, 17);
 }
 
-.image-container {
+img {
     	max-width: 100%; /* Set a pixel value instead if no parent container*/
     	margin: 0 auto; /* Center the container */
       width: 50%; /* Fill the available width */
