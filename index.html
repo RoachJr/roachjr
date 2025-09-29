@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/roachjr/content/favicons/favicon.ico">
         <title>Want to know about me?</title>
     </head>
         <div id ="sideBar" class="sidebar">
@@ -93,39 +94,6 @@
         </div>
 
         <script>
-            // Helper: Retrieve or create a favicon element
-            function getFaviconElement() {
-                let favicon = document.querySelector('link[rel="icon"]') ||
-                    document.querySelector('link[rel="shortcut icon"]');
-                if (!favicon) {
-                favicon = document.createElement('link');
-                favicon.rel = 'icon';
-                document.head.appendChild(favicon);
-                }
-                return favicon;
-            }
-
-            // Function to update the favicon based on dark mode
-            function updateFavicon(e) {
-                const darkModeOn = e ? e.matches : window.matchMedia('(prefers-color-scheme: dark)').matches;
-                const favicon = getFaviconElement();
-                // Update these paths to your favicon assets in Webflow’s Asset Manager or a CDN
-                favicon.href = darkModeOn
-                ? '/roachjr/content/favicons/favicon_light.png'
-                : '/roachjr/content/favicons/favicon_dark.png';
-            }
-
-            // Initialize the favicon update on page load
-            updateFavicon();
-
-            // Listen for changes in the dark mode media query
-            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-            if (typeof darkModeMediaQuery.addEventListener === 'function') {
-                darkModeMediaQuery.addEventListener('change', updateFavicon);
-            } else if (typeof darkModeMediaQuery.addListener === 'function') {
-                darkModeMediaQuery.addListener(updateFavicon);
-            }
-
             function openNav() {
                 document.getElementById("sideBar").style.width = "250px";
                 document.getElementById("main").style.marginLeft = "250px";
